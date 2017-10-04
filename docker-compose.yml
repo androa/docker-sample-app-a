@@ -3,8 +3,6 @@ services:
   app:
     build: .
     command: npm run start:watch
-    ports:
-      - 3000
     environment:
       - EXTERNAL_SERVICE_HOST=http://www.google.com
     volumes:
